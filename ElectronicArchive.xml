@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ElectronicArchive>
+	<speciality ID = "1" COURSE ="PRYMAT">
+		<group TYPE="K22">
+			<student ID ="1"
+					 DATEOFCREATION="307"
+					 NAME ="Karpenko"
+					 AUTHOR ="Kyrylo"
+					 AMOUNT ="999">
+				Text1
+			</student>
+			<student ID ="2"
+					 DATEOFCREATION="411"
+					 NAME ="Skorohod"
+					 AUTHOR ="Sergii"
+					 AMOUNT ="8888">
+				Text2
+			</student>
+		</group>
+		<group TYPE ="K23">
+			<student ID ="1"
+					 DATEOFCREATION="122"
+					 NAME ="Kraevsliy"
+					 AUTHOR ="Oleksandr"
+					 AMOUNT ="898989">
+				Text3
+			</student>
+		</group>
+	</speciality>
+	<speciality ID = "2" COURSE ="INFORM">
+		<group TYPE="K25">
+			<student ID ="1"
+					 DATEOFCREATION="307"
+					 NAME ="Barenblat"
+					 AUTHOR ="Igor"
+					 AMOUNT ="999">
+				Text4
+			</student>
+			<student ID ="2"
+					 DATEOFCREATION="114"
+					 NAME ="Kuntso"
+					 AUTHOR ="Dmytro"
+					 AMOUNT ="2348888">
+				Text5
+			</student>
+			<student ID ="3"
+					 DATEOFCREATION="307"
+					 NAME ="Rybchanivskuy"
+					 AUTHOR ="Victor"
+					 AMOUNT ="755588">
+				Text6
+			</student>
+			<student ID ="4"
+					 DATEOFCREATION="604"
+					 NAME ="Karpenko"
+					 AUTHOR ="Maksym"
+					 AMOUNT ="7888">
+				Text7
+			</student>
+			<student ID ="5"
+					 DATEOFCREATION="307"
+					 NAME ="Fekete"
+					 AUTHOR ="Ivan"
+					 AMOUNT ="090909">
+				Text8
+			</student>
+		</group>
+		<group TYPE ="K26">
+			<student ID ="1"
+					 DATEOFCREATION="122"
+					 NAME ="Filipenkov"
+					 AUTHOR ="Illia"
+					 AMOUNT ="4747">
+				Text9
+			</student>
+			<student ID ="2"
+					 DATEOFCREATION="604"
+					 NAME ="Klyoz"
+					 AUTHOR ="Vitaliy"
+					 AMOUNT ="9375">
+				Text10
+			</student>
+		</group>
+	</speciality>
+	<speciality ID = "3" COURSE ="PI">
+		<group TYPE="K28">
+			<student ID ="1"
+					 DATEOFCREATION="114"
+					 NAME ="Mysechko"
+					 AUTHOR ="Artem"
+					 AMOUNT ="1999">
+				Text11
+			</student>
+			<student ID ="2"
+					 DATEOFCREATION="114"
+					 NAME ="Filonenko"
+					 AUTHOR ="Bogdan"
+					 AMOUNT ="86788">
+				Text12
+			</student>
+		</group>
+		<group TYPE ="K29">
+			<student ID ="1"
+					 DATEOFCREATION="114"
+					 NAME ="Gevorgean"
+					 AUTHOR ="Artem"
+					 AMOUNT ="00009">
+				Text13
+			</student>
+		</group>
+	</speciality>
+</ElectronicArchive>
+	
+	
+		
+		
+			

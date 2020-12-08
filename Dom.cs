@@ -14,37 +14,37 @@ namespace Lab2
         {
             doc.Load(path);
         }
-        public List<Student> Algorithm(Student student, string path)
+        public List<Paperwork> Algorithm(Paperwork paperwork, string path)
         {
-            List<List<Student>> info = new List<List<Student>>();
-            info.Add(AllStudents(doc));
+            List<List<Paperwork>> info = new List<List<Paperwork>>();
+            info.Add(AllPaperworks(doc));
             try
             {
-                if (student.Speciality != null) info.Add(SearchByParam("speciality", "SPECIALITY", student.Speciality, doc, 0));
-                if (student.Group != null) info.Add(SearchByParam("group", "GROUP", student.Group, doc, 1));
-                if (student.Room != null) info.Add(SearchByParam("room", "ROOM", student.Room, doc, 2));
-                if (student.Surname != null) info.Add(SearchByParam("surname", "SURNAME", student.Surname, doc, 2));
-                if (student.Name != null) info.Add(SearchByParam("name", "NAME", student.Name, doc, 2));
-                if (student.Phonenumber != null) info.Add(SearchByParam("phonenumber", "PHONENUMBER", student.Phonenumber, doc, 2));
+                if (paperwork.Course != null) info.Add(SearchByParam("course", "COURSE", paperwork.Course, doc, 0));
+                if (paperwork.Group != null) info.Add(SearchByParam("group", "TYPE", paperwork.Group, doc, 1));
+                if (paperwork.DateOfCreation != null) info.Add(SearchByParam("room", "DATEOFCREATION", paperwork.DateOfCreation, doc, 2));
+                if (paperwork.Surname != null) info.Add(SearchByParam("surname", "NAME", paperwork.Surname, doc, 2));
+                if (paperwork.Name != null) info.Add(SearchByParam("name", "AUTHOR", paperwork.Name, doc, 2));
+                if (paperwork.Amount != null) info.Add(SearchByParam("phonenumber", "AMOUNT", paperwork.Amount, doc, 2));
             }
             catch { }
             return Cross(info);
         }
-        public static Student Info(XmlNode node)
+        public static Paperwork Info(XmlNode node)
         {
-            Student nw = new Student();
-            nw.Speciality = node.ParentNode.ParentNode.Attributes.GetNamedItem("SPECIALITY").Value;
-            nw.Group = node.ParentNode.Attributes.GetNamedItem("GROUP").Value;
-            nw.Room = node.Attributes.GetNamedItem("ROOM").Value;
-            nw.Surname = node.Attributes.GetNamedItem("SURNAME").Value;
-            nw.Name = node.Attributes.GetNamedItem("NAME").Value;
-            nw.Phonenumber = node.Attributes.GetNamedItem("PHONENUMBER").Value;
+            Paperwork nw = new Paperwork();
+            nw.Course = node.ParentNode.ParentNode.Attributes.GetNamedItem("COURSE").Value;
+            nw.Group = node.ParentNode.Attributes.GetNamedItem("TYPE").Value;
+            nw.DateOfCreation = node.Attributes.GetNamedItem("DATEOFCREATION").Value;
+            nw.Surname = node.Attributes.GetNamedItem("NAME").Value;
+            nw.Name = node.Attributes.GetNamedItem("AUTHOR").Value;
+            nw.Amount = node.Attributes.GetNamedItem("AMOUNT").Value;
             return nw;
         }
-        public static List<Student> AllStudents(XmlDocument doc)
+        public static List<Paperwork> AllPaperworks(XmlDocument doc)
         {
-            List<Student> data2 = new List<Student>();
-            XmlNodeList elem = doc.SelectNodes("//student");
+            List<Paperwork> data2 = new List<Paperwork>();
+            XmlNodeList elem = doc.SelectNodes("//paperwork");
             try
             {
                 foreach (XmlNode el in elem)
@@ -56,9 +56,9 @@ namespace Lab2
             catch { }
             return data2;
         }
-        public static List<Student> SearchByParam(string nodename, string val, string param, XmlDocument doc, int n)
+        public static List<Paperwork> SearchByParam(string nodename, string val, string param, XmlDocument doc, int n)
         {
-            List<Student> students = new List<Student>();
+            List<Paperwork> paperworks = new List<Paperwork>();
 
             if (param != String.Empty && param != null)
             {
@@ -77,13 +77,13 @@ namespace Lab2
                                         XmlNodeList list2 = el.ChildNodes;
                                         foreach (XmlNode ell in list2)
                                         {
-                                            students.Add(Info(ell));
+                                            paperworks.Add(Info(ell));
                                         }
                                     }
                                 }
                             }
                             catch { }
-                            return students;
+                            return paperworks;
                         }
                     case 1:
                         {
@@ -96,12 +96,12 @@ namespace Lab2
                                     XmlNodeList list1 = e.ChildNodes;
                                     foreach (XmlNode el in list1)
                                     {
-                                        students.Add(Info(el));
+                                        paperworks.Add(Info(el));
                                     }
                                 }
                             }
                             catch { }
-                            return students;
+                            return paperworks;
                         }
                     case 2:
                         {
@@ -111,36 +111,36 @@ namespace Lab2
                             {
                                 foreach (XmlNode e in elem)
                                 {
-                                    students.Add(Info(e));
+                                    paperworks.Add(Info(e));
 
                                 }
                             }
                             catch { }
-                            return students;
+                            return paperworks;
                         }
                     default: break;
                 }
             }
-            return students;
+            return paperworks;
         }
-        private static List<Student> Cross(List<List<Student>> list)
+        private static List<Paperwork> Cross(List<List<Paperwork>> list)
         {
-            List<Student> result = new List<Student>();
+            List<Paperwork> result = new List<Paperwork>();
             try
             {
                 if (list != null)
                 {
-                    Student[] st = list[0].ToArray();
+                    Paperwork[] st = list[0].ToArray();
                     if (st != null)
                     {
-                        foreach (Student elem in st)
+                        foreach (Paperwork elem in st)
                         {
                             bool IsIn = true;
-                            foreach (List<Student> t in list)
+                            foreach (List<Paperwork> t in list)
                             {
-                                if (t.Count <= 0) return new List<Student>();
+                                if (t.Count <= 0) return new List<Paperwork>();
 
-                                foreach (Student s in t)
+                                foreach (Paperwork s in t)
                                 {
                                     IsIn = false;
                                     if (elem.Comparing(s))

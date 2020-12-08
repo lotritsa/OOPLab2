@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Speciality = new System.Windows.Forms.CheckBox();
+            this.CourseCheckBox = new System.Windows.Forms.CheckBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Group = new System.Windows.Forms.CheckBox();
-            this.Room = new System.Windows.Forms.CheckBox();
-            this.Surname = new System.Windows.Forms.CheckBox();
-            this.NameCheck = new System.Windows.Forms.CheckBox();
-            this.PhoneNumber = new System.Windows.Forms.CheckBox();
-            this.SpecialityBox = new System.Windows.Forms.ComboBox();
-            this.GroupBox1 = new System.Windows.Forms.ComboBox();
-            this.RoomBox = new System.Windows.Forms.ComboBox();
-            this.SurnameBox = new System.Windows.Forms.ComboBox();
+            this.TypeCheckBox = new System.Windows.Forms.CheckBox();
+            this.DateCheckBox = new System.Windows.Forms.CheckBox();
+            this.NameCheckBox = new System.Windows.Forms.CheckBox();
+            this.AuthorCheckBox = new System.Windows.Forms.CheckBox();
+            this.AmountCheckBox = new System.Windows.Forms.CheckBox();
+            this.CourseBox = new System.Windows.Forms.ComboBox();
+            this.TypeBox = new System.Windows.Forms.ComboBox();
+            this.DateBox = new System.Windows.Forms.ComboBox();
             this.NameBox = new System.Windows.Forms.ComboBox();
-            this.PhoneBox = new System.Windows.Forms.ComboBox();
+            this.AuthorBox = new System.Windows.Forms.ComboBox();
+            this.AmountBox = new System.Windows.Forms.ComboBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.Search = new System.Windows.Forms.Button();
             this.LINQ = new System.Windows.Forms.RadioButton();
@@ -51,18 +51,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // Speciality
+            // CourseCheckBox
             // 
-            this.Speciality.AutoSize = true;
-            this.Speciality.BackColor = System.Drawing.Color.LightPink;
-            this.Speciality.Font = new System.Drawing.Font("Lobster", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Speciality.ForeColor = System.Drawing.Color.Crimson;
-            this.Speciality.Location = new System.Drawing.Point(503, 89);
-            this.Speciality.Name = "Speciality";
-            this.Speciality.Size = new System.Drawing.Size(123, 34);
-            this.Speciality.TabIndex = 0;
-            this.Speciality.Text = "Speciality";
-            this.Speciality.UseVisualStyleBackColor = false;
+            this.CourseCheckBox.AutoSize = true;
+            this.CourseCheckBox.BackColor = System.Drawing.Color.LightPink;
+            this.CourseCheckBox.Font = new System.Drawing.Font("Lobster", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CourseCheckBox.ForeColor = System.Drawing.Color.Crimson;
+            this.CourseCheckBox.Location = new System.Drawing.Point(503, 89);
+            this.CourseCheckBox.Name = "CourseCheckBox";
+            this.CourseCheckBox.Size = new System.Drawing.Size(94, 34);
+            this.CourseCheckBox.TabIndex = 0;
+            this.CourseCheckBox.Text = "Course";
+            this.CourseCheckBox.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -73,133 +73,141 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // Group
+            // TypeCheckBox
             // 
-            this.Group.AutoSize = true;
-            this.Group.BackColor = System.Drawing.Color.LightPink;
-            this.Group.Font = new System.Drawing.Font("Lobster", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Group.ForeColor = System.Drawing.Color.Crimson;
-            this.Group.Location = new System.Drawing.Point(503, 139);
-            this.Group.Name = "Group";
-            this.Group.Size = new System.Drawing.Size(89, 34);
-            this.Group.TabIndex = 2;
-            this.Group.Text = "Group";
-            this.Group.UseVisualStyleBackColor = false;
+            this.TypeCheckBox.AutoSize = true;
+            this.TypeCheckBox.BackColor = System.Drawing.Color.LightPink;
+            this.TypeCheckBox.Font = new System.Drawing.Font("Lobster", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TypeCheckBox.ForeColor = System.Drawing.Color.Crimson;
+            this.TypeCheckBox.Location = new System.Drawing.Point(503, 139);
+            this.TypeCheckBox.Name = "TypeCheckBox";
+            this.TypeCheckBox.Size = new System.Drawing.Size(76, 34);
+            this.TypeCheckBox.TabIndex = 2;
+            this.TypeCheckBox.Text = "Type";
+            this.TypeCheckBox.UseVisualStyleBackColor = false;
             // 
-            // Room
+            // DateCheckBox
             // 
-            this.Room.AutoSize = true;
-            this.Room.BackColor = System.Drawing.Color.LightPink;
-            this.Room.Font = new System.Drawing.Font("Lobster", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Room.ForeColor = System.Drawing.Color.Crimson;
-            this.Room.Location = new System.Drawing.Point(503, 189);
-            this.Room.Name = "Room";
-            this.Room.Size = new System.Drawing.Size(85, 34);
-            this.Room.TabIndex = 3;
-            this.Room.Text = "Room";
-            this.Room.UseVisualStyleBackColor = false;
+            this.DateCheckBox.AutoSize = true;
+            this.DateCheckBox.BackColor = System.Drawing.Color.LightPink;
+            this.DateCheckBox.Font = new System.Drawing.Font("Lobster", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DateCheckBox.ForeColor = System.Drawing.Color.Crimson;
+            this.DateCheckBox.Location = new System.Drawing.Point(503, 189);
+            this.DateCheckBox.Name = "DateCheckBox";
+            this.DateCheckBox.Size = new System.Drawing.Size(177, 34);
+            this.DateCheckBox.TabIndex = 3;
+            this.DateCheckBox.Text = "Date of creation";
+            this.DateCheckBox.UseVisualStyleBackColor = false;
             // 
-            // Surname
+            // NameCheckBox
             // 
-            this.Surname.AutoSize = true;
-            this.Surname.BackColor = System.Drawing.Color.LightPink;
-            this.Surname.Font = new System.Drawing.Font("Lobster", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Surname.ForeColor = System.Drawing.Color.Crimson;
-            this.Surname.Location = new System.Drawing.Point(503, 239);
-            this.Surname.Name = "Surname";
-            this.Surname.Size = new System.Drawing.Size(119, 34);
-            this.Surname.TabIndex = 4;
-            this.Surname.Text = "Surname";
-            this.Surname.UseVisualStyleBackColor = false;
+            this.NameCheckBox.AutoSize = true;
+            this.NameCheckBox.BackColor = System.Drawing.Color.LightPink;
+            this.NameCheckBox.Font = new System.Drawing.Font("Lobster", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.NameCheckBox.ForeColor = System.Drawing.Color.Crimson;
+            this.NameCheckBox.Location = new System.Drawing.Point(503, 239);
+            this.NameCheckBox.Name = "NameCheckBox";
+            this.NameCheckBox.Size = new System.Drawing.Size(88, 34);
+            this.NameCheckBox.TabIndex = 4;
+            this.NameCheckBox.Text = "Name";
+            this.NameCheckBox.UseVisualStyleBackColor = false;
             // 
-            // NameCheck
+            // AuthorCheckBox
             // 
-            this.NameCheck.AutoSize = true;
-            this.NameCheck.BackColor = System.Drawing.Color.LightPink;
-            this.NameCheck.Font = new System.Drawing.Font("Lobster", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.NameCheck.ForeColor = System.Drawing.Color.Crimson;
-            this.NameCheck.Location = new System.Drawing.Point(503, 289);
-            this.NameCheck.Name = "NameCheck";
-            this.NameCheck.Size = new System.Drawing.Size(88, 34);
-            this.NameCheck.TabIndex = 5;
-            this.NameCheck.Text = "Name";
-            this.NameCheck.UseVisualStyleBackColor = false;
+            this.AuthorCheckBox.AutoSize = true;
+            this.AuthorCheckBox.BackColor = System.Drawing.Color.LightPink;
+            this.AuthorCheckBox.Font = new System.Drawing.Font("Lobster", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AuthorCheckBox.ForeColor = System.Drawing.Color.Crimson;
+            this.AuthorCheckBox.Location = new System.Drawing.Point(503, 289);
+            this.AuthorCheckBox.Name = "AuthorCheckBox";
+            this.AuthorCheckBox.Size = new System.Drawing.Size(98, 34);
+            this.AuthorCheckBox.TabIndex = 5;
+            this.AuthorCheckBox.Text = "Author";
+            this.AuthorCheckBox.UseVisualStyleBackColor = false;
             // 
-            // PhoneNumber
+            // AmountCheckBox
             // 
-            this.PhoneNumber.AutoSize = true;
-            this.PhoneNumber.BackColor = System.Drawing.Color.LightPink;
-            this.PhoneNumber.Font = new System.Drawing.Font("Lobster", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PhoneNumber.ForeColor = System.Drawing.Color.Crimson;
-            this.PhoneNumber.Location = new System.Drawing.Point(503, 339);
-            this.PhoneNumber.Name = "PhoneNumber";
-            this.PhoneNumber.Size = new System.Drawing.Size(166, 34);
-            this.PhoneNumber.TabIndex = 6;
-            this.PhoneNumber.Text = "Phone number";
-            this.PhoneNumber.UseVisualStyleBackColor = false;
+            this.AmountCheckBox.AutoSize = true;
+            this.AmountCheckBox.BackColor = System.Drawing.Color.LightPink;
+            this.AmountCheckBox.Font = new System.Drawing.Font("Lobster", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AmountCheckBox.ForeColor = System.Drawing.Color.Crimson;
+            this.AmountCheckBox.Location = new System.Drawing.Point(503, 339);
+            this.AmountCheckBox.Name = "AmountCheckBox";
+            this.AmountCheckBox.Size = new System.Drawing.Size(108, 34);
+            this.AmountCheckBox.TabIndex = 6;
+            this.AmountCheckBox.Text = "Amount";
+            this.AmountCheckBox.UseVisualStyleBackColor = false;
             // 
-            // SpecialityBox
+            // CourseBox
             // 
-            this.SpecialityBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.SpecialityBox.Font = new System.Drawing.Font("Lobster", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SpecialityBox.FormattingEnabled = true;
-            this.SpecialityBox.Location = new System.Drawing.Point(632, 88);
-            this.SpecialityBox.Name = "SpecialityBox";
-            this.SpecialityBox.Size = new System.Drawing.Size(166, 35);
-            this.SpecialityBox.TabIndex = 7;
+            this.CourseBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CourseBox.Font = new System.Drawing.Font("Lobster", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CourseBox.ForeColor = System.Drawing.Color.Crimson;
+            this.CourseBox.FormattingEnabled = true;
+            this.CourseBox.Location = new System.Drawing.Point(603, 88);
+            this.CourseBox.Name = "CourseBox";
+            this.CourseBox.Size = new System.Drawing.Size(160, 35);
+            this.CourseBox.TabIndex = 7;
             // 
-            // GroupBox1
+            // TypeBox
             // 
-            this.GroupBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.GroupBox1.Font = new System.Drawing.Font("Lobster", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.GroupBox1.FormattingEnabled = true;
-            this.GroupBox1.Location = new System.Drawing.Point(598, 140);
-            this.GroupBox1.Name = "GroupBox1";
-            this.GroupBox1.Size = new System.Drawing.Size(166, 35);
-            this.GroupBox1.TabIndex = 8;
+            this.TypeBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.TypeBox.Font = new System.Drawing.Font("Lobster", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TypeBox.ForeColor = System.Drawing.Color.Crimson;
+            this.TypeBox.FormattingEnabled = true;
+            this.TypeBox.Location = new System.Drawing.Point(585, 140);
+            this.TypeBox.Name = "TypeBox";
+            this.TypeBox.Size = new System.Drawing.Size(150, 35);
+            this.TypeBox.TabIndex = 8;
             // 
-            // RoomBox
+            // DateBox
             // 
-            this.RoomBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.RoomBox.Font = new System.Drawing.Font("Lobster", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.RoomBox.FormattingEnabled = true;
-            this.RoomBox.Location = new System.Drawing.Point(594, 188);
-            this.RoomBox.Name = "RoomBox";
-            this.RoomBox.Size = new System.Drawing.Size(166, 35);
-            this.RoomBox.TabIndex = 9;
-            // 
-            // SurnameBox
-            // 
-            this.SurnameBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.SurnameBox.Font = new System.Drawing.Font("Lobster", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SurnameBox.FormattingEnabled = true;
-            this.SurnameBox.Location = new System.Drawing.Point(628, 238);
-            this.SurnameBox.Name = "SurnameBox";
-            this.SurnameBox.Size = new System.Drawing.Size(166, 35);
-            this.SurnameBox.TabIndex = 10;
+            this.DateBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.DateBox.Font = new System.Drawing.Font("Lobster", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DateBox.ForeColor = System.Drawing.Color.Crimson;
+            this.DateBox.FormattingEnabled = true;
+            this.DateBox.Location = new System.Drawing.Point(686, 188);
+            this.DateBox.Name = "DateBox";
+            this.DateBox.Size = new System.Drawing.Size(155, 35);
+            this.DateBox.TabIndex = 9;
             // 
             // NameBox
             // 
             this.NameBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.NameBox.Font = new System.Drawing.Font("Lobster", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.NameBox.ForeColor = System.Drawing.Color.Crimson;
             this.NameBox.FormattingEnabled = true;
-            this.NameBox.Location = new System.Drawing.Point(597, 288);
+            this.NameBox.Location = new System.Drawing.Point(597, 240);
             this.NameBox.Name = "NameBox";
-            this.NameBox.Size = new System.Drawing.Size(166, 35);
-            this.NameBox.TabIndex = 11;
+            this.NameBox.Size = new System.Drawing.Size(189, 35);
+            this.NameBox.TabIndex = 10;
             // 
-            // PhoneBox
+            // AuthorBox
             // 
-            this.PhoneBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.PhoneBox.Font = new System.Drawing.Font("Lobster", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PhoneBox.FormattingEnabled = true;
-            this.PhoneBox.Location = new System.Drawing.Point(675, 339);
-            this.PhoneBox.Name = "PhoneBox";
-            this.PhoneBox.Size = new System.Drawing.Size(166, 35);
-            this.PhoneBox.TabIndex = 12;
+            this.AuthorBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AuthorBox.Font = new System.Drawing.Font("Lobster", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AuthorBox.ForeColor = System.Drawing.Color.Crimson;
+            this.AuthorBox.FormattingEnabled = true;
+            this.AuthorBox.Location = new System.Drawing.Point(607, 288);
+            this.AuthorBox.Name = "AuthorBox";
+            this.AuthorBox.Size = new System.Drawing.Size(193, 35);
+            this.AuthorBox.TabIndex = 11;
+            // 
+            // AmountBox
+            // 
+            this.AmountBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.AmountBox.Font = new System.Drawing.Font("Lobster", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AmountBox.ForeColor = System.Drawing.Color.Crimson;
+            this.AmountBox.FormattingEnabled = true;
+            this.AmountBox.Location = new System.Drawing.Point(617, 338);
+            this.AmountBox.Name = "AmountBox";
+            this.AmountBox.Size = new System.Drawing.Size(146, 35);
+            this.AmountBox.TabIndex = 12;
             // 
             // richTextBox1
             // 
+            this.richTextBox1.Font = new System.Drawing.Font("Lobster", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.richTextBox1.ForeColor = System.Drawing.Color.Crimson;
             this.richTextBox1.Location = new System.Drawing.Point(30, 25);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(446, 413);
@@ -272,6 +280,7 @@
             this.TransformToHTML.TabIndex = 18;
             this.TransformToHTML.Text = "Transform to HTML";
             this.TransformToHTML.UseVisualStyleBackColor = false;
+            this.TransformToHTML.Click += new System.EventHandler(this.TransformToHTML_Click);
             // 
             // Clear
             // 
@@ -300,21 +309,21 @@
             this.Controls.Add(this.LINQ);
             this.Controls.Add(this.Search);
             this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.PhoneBox);
+            this.Controls.Add(this.AmountBox);
+            this.Controls.Add(this.AuthorBox);
             this.Controls.Add(this.NameBox);
-            this.Controls.Add(this.SurnameBox);
-            this.Controls.Add(this.RoomBox);
-            this.Controls.Add(this.GroupBox1);
-            this.Controls.Add(this.SpecialityBox);
-            this.Controls.Add(this.PhoneNumber);
-            this.Controls.Add(this.NameCheck);
-            this.Controls.Add(this.Surname);
-            this.Controls.Add(this.Room);
-            this.Controls.Add(this.Group);
-            this.Controls.Add(this.Speciality);
+            this.Controls.Add(this.DateBox);
+            this.Controls.Add(this.TypeBox);
+            this.Controls.Add(this.CourseBox);
+            this.Controls.Add(this.AmountCheckBox);
+            this.Controls.Add(this.AuthorCheckBox);
+            this.Controls.Add(this.NameCheckBox);
+            this.Controls.Add(this.DateCheckBox);
+            this.Controls.Add(this.TypeCheckBox);
+            this.Controls.Add(this.CourseCheckBox);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "LAB2";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -323,19 +332,19 @@
 
         #endregion
 
-        private System.Windows.Forms.CheckBox Speciality;
+        private System.Windows.Forms.CheckBox CourseCheckBox;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.CheckBox Group;
-        private System.Windows.Forms.CheckBox Room;
-        private System.Windows.Forms.CheckBox Surname;
-        private System.Windows.Forms.CheckBox NameCheck;
-        private System.Windows.Forms.CheckBox PhoneNumber;
-        private System.Windows.Forms.ComboBox SpecialityBox;
-        private System.Windows.Forms.ComboBox GroupBox1;
-        private System.Windows.Forms.ComboBox RoomBox;
-        private System.Windows.Forms.ComboBox SurnameBox;
+        private System.Windows.Forms.CheckBox TypeCheckBox;
+        private System.Windows.Forms.CheckBox DateCheckBox;
+        private System.Windows.Forms.CheckBox NameCheckBox;
+        private System.Windows.Forms.CheckBox AuthorCheckBox;
+        private System.Windows.Forms.CheckBox AmountCheckBox;
+        private System.Windows.Forms.ComboBox CourseBox;
+        private System.Windows.Forms.ComboBox TypeBox;
+        private System.Windows.Forms.ComboBox DateBox;
         private System.Windows.Forms.ComboBox NameBox;
-        private System.Windows.Forms.ComboBox PhoneBox;
+        private System.Windows.Forms.ComboBox AuthorBox;
+        private System.Windows.Forms.ComboBox AmountBox;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button Search;
         private System.Windows.Forms.RadioButton LINQ;

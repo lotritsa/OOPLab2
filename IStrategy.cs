@@ -8,6 +8,6 @@ namespace Lab2
 {
     interface IStrategy
     {
-        List<Student> Algorithm(Student p, string path);
+        List<Paperwork> Algorithm(Paperwork p, string path);
     }
 }

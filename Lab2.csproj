@@ -58,7 +58,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sax.cs" />
-    <Compile Include="Student.cs" />
+    <Compile Include="Paperwork.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -87,8 +87,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\linear-gradient-110deg-min.jpg" />
-    <Content Include="kek.xsl" />
-    <Content Include="StudentDataBase.xml" />
+    <Content Include="kek.xsl">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

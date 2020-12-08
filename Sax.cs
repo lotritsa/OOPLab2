@@ -9,30 +9,30 @@ namespace Lab2
 {
     class Sax:IStrategy
     {
-        List<Student> info = new List<Student>();
+        List<Paperwork> info = new List<Paperwork>();
         XmlReader BestReader;
         public Sax(string path)
         {
             BestReader = XmlReader.Create(path);
         }
 
-        public  List <Student> Algorithm(Student student, string path)
+        public  List <Paperwork> Algorithm(Paperwork paperwork, string path)
         {
             info.Clear();
 
-            List<Student> result = new List<Student>();
-            Student st = null;
-            string _speciality = null;
+            List<Paperwork> result = new List<Paperwork>();
+            Paperwork st = null;
+            string _course = null;
             string _group = null;
             while (BestReader.Read())
             {
-                if (BestReader.Name == "speciality")
+                if (BestReader.Name == "course")
                 {
                     while (BestReader.MoveToNextAttribute())
                     {
-                        if (BestReader.Name == "SPECIALITY")
+                        if (BestReader.Name == "COURSE")
                         {
-                            _speciality = BestReader.Value;
+                            _course = BestReader.Value;
                         }
                     }
                 }
@@ -40,45 +40,45 @@ namespace Lab2
                 {
                     while (BestReader.MoveToNextAttribute())
                     {
-                        if (BestReader.Name == "GROUP")
+                        if (BestReader.Name == "TYPE")
                         {
                             _group = BestReader.Value;
                         }
                     }
                 }
-                if (BestReader.Name == "student")
+                if (BestReader.Name == "paperwork")
                 {
                     if (st == null)
                     {
-                        st = new Student();
-                        st.Speciality = _speciality;
+                        st = new Paperwork();
+                        st.Course = _course;
                         st.Group = _group;
                     }
                     else
                     {
-                        st = new Student();
-                        st.Speciality = _speciality;
+                        st = new Paperwork();
+                        st.Course = _course;
                         st.Group = _group;
                     }
                     if (BestReader.HasAttributes)
                     {
                         while (BestReader.MoveToNextAttribute())
                         {
-                            if (BestReader.Name == "ROOM")
+                            if (BestReader.Name == "DATEOFCREATION")
                             {
-                                st.Room = BestReader.Value;
-                            }
-                            if (BestReader.Name == "SURNAME")
-                            {
-                                st.Surname = BestReader.Value;
+                                st.DateOfCreation = BestReader.Value;
                             }
                             if (BestReader.Name == "NAME")
                             {
+                                st.Surname = BestReader.Value;
+                            }
+                            if (BestReader.Name == "AUTHOR")
+                            {
                                 st.Name = BestReader.Value;
                             }
-                            if (BestReader.Name == "PHONENUMBER")
+                            if (BestReader.Name == "AMOUNT")
                             {
-                                st.Phonenumber = BestReader.Value;
+                                st.Amount = BestReader.Value;
                             }
                         }
                     }
@@ -88,25 +88,25 @@ namespace Lab2
                     }
                 }
             }
-            info = Filtr(result, student);
+            info = Filtr(result, paperwork);
             return info;
         }
-        public List <Student> Filtr(List<Student> allStud, Student param)
+        public List <Paperwork> Filtr(List<Paperwork> allStud, Paperwork param)
         {
-            List<Student> result = new List<Student>();
+            List<Paperwork> result = new List<Paperwork>();
             if (allStud != null)
             {
-                foreach (Student e in allStud)
+                foreach (Paperwork e in allStud)
                 {
                     try
                     {
                         if (
-                            (e.Speciality == param.Speciality || param.Speciality == null) &&
+                            (e.Course == param.Course || param.Course == null) &&
                             (e.Group == param.Group || param.Group == null) &&
-                            (e.Room == param.Room || param.Room == null) &&
+                            (e.DateOfCreation == param.DateOfCreation || param.DateOfCreation == null) &&
                             (e.Surname == param.Surname || param.Surname == null) &&
                             (e.Name == param.Name || param.Name == null) &&
-                            (e.Phonenumber == param.Phonenumber || param.Phonenumber == null)
+                            (e.Amount == param.Amount || param.Amount == null)
                             )
                         {
                             result.Add(e);

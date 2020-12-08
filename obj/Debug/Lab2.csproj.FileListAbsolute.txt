@@ -8,3 +8,13 @@ C:\Users\eva\source\repos\Lab2\obj\Debug\Lab2.csproj.GenerateResource.cache
 C:\Users\eva\source\repos\Lab2\obj\Debug\Lab2.csproj.CoreCompileInputs.cache
 C:\Users\eva\source\repos\Lab2\obj\Debug\Lab2.exe
 C:\Users\eva\source\repos\Lab2\obj\Debug\Lab2.pdb
+C:\Users\eva\source\repos\Lab2 — копия\bin\Debug\Lab2.exe.config
+C:\Users\eva\source\repos\Lab2 — копия\bin\Debug\Lab2.exe
+C:\Users\eva\source\repos\Lab2 — копия\bin\Debug\Lab2.pdb
+C:\Users\eva\source\repos\Lab2 — копия\obj\Debug\Lab2.csprojAssemblyReference.cache
+C:\Users\eva\source\repos\Lab2 — копия\obj\Debug\Lab2.Form1.resources
+C:\Users\eva\source\repos\Lab2 — копия\obj\Debug\Lab2.Properties.Resources.resources
+C:\Users\eva\source\repos\Lab2 — копия\obj\Debug\Lab2.csproj.GenerateResource.cache
+C:\Users\eva\source\repos\Lab2 — копия\obj\Debug\Lab2.csproj.CoreCompileInputs.cache
+C:\Users\eva\source\repos\Lab2 — копия\obj\Debug\Lab2.exe
+C:\Users\eva\source\repos\Lab2 — копия\obj\Debug\Lab2.pdb
